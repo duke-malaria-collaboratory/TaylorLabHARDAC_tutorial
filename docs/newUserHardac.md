@@ -6,9 +6,9 @@
 
     - Either through VPN or by being on campus
 
-2) Open the Terminal app on a macOS
+- Open the Terminal app on a macOS
 
-3) Type the following:
+Type the following:
     
     ssh yourNetID@hardac-login.genome.duke.edu
 
