@@ -31,7 +31,7 @@ srun: Tell Slurm (the software on the cluster that manages job submission) to ru
 --mem: How much memory (in Mb) to allocate for the interactive session
 
 /bin/bash: Open the interactive session in the bash shell  
-            If you prefer another shell, you can use that by replacing bash with tcsh, zsh, etc
+*If you prefer another shell, you can use that by replacing bash with tcsh, zsh, etc
 
 ### You're on the cluster!
 You can start running jobs! But first...
