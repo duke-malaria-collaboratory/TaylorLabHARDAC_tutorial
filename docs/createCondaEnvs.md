@@ -5,6 +5,7 @@
 Type the following:
 
 	cd /data/taylorlab/${USER}/TaylorLabHARDAC_tutorial/scripts
+	./createCondaEnv.sh
 	
 
 
