@@ -132,7 +132,7 @@ if __name__ == "__main__":
 
 	description = "Splits and synchronizes paired-end amplicon sequence data by target" \
 
-	parser = argparse.ArgumentParser(prog="Variant caller", description=description)
+	parser = argparse.ArgumentParser(prog="Reference splitter", description=description)
 	# user-defined parameters
 	parser.add_argument("-numTargets", "--numTargs",
 		type=int,
