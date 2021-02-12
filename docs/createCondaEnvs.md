@@ -1,6 +1,10 @@
 # Guide to creating new conda envs
 
-Navigate to the scripts directory from this repository:
+### Navigate to the scripts directory from this repository
 
-  cd ${LAB_DIR}/${USER}/TaylorLabHARDAC_tutorial/scripts
+Type the following:
+
+	cd ${LAB_DIR}/${USER}/TaylorLabHARDAC_tutorial/scripts
+	
+
 
