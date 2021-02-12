@@ -4,7 +4,7 @@
 
 Type the following:
 
-	cd ${LAB_DIR}/${USER}/TaylorLabHARDAC_tutorial/scripts
+	cd /data/taylorlab/${USER}/TaylorLabHARDAC_tutorial/scripts
 	
 
 
