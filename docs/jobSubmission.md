@@ -11,12 +11,12 @@
 	cd TaylorLabHARDAC_tutorial
 	
 ### Take a look around
-
 #### List the contents
 	ls .
-- List the contents of the scripts directory
+- List the contents of the scripts and slurm directories
 	ls scripts/
 	
-	
+	ls scripts/slurm
 
-	
+### Look at the 
+### Check the status of your job
