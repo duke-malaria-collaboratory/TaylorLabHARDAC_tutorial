@@ -22,10 +22,13 @@
 	cat splitSyncMultiRefArray.py
 
 ### Before we can run it, we need to install some software
-	- BBMap - very powerful and useful toolkit for NGS data
-
-	- Let's create a directory to hold software
+#### BBMap - very powerful and useful toolkit for NGS data
+	mkdir /data/taylorlab/${USER}/software	
+	cd /data/taylorlab/${USER}/software
+	wget https://sourceforge.net/projects/bbmap/files/BBMap_38.90.tar.gz
+	tar -xf BBMap_38.90.tar.gz
+	rm BBMap_38.90.tar.gz
+	echo "export PATH="/data/taylorlab/${USER}/software/bbmap:$PATH"" >> ~/.bashrc
+	source ~/.bashrc
 	
-
-#
 ### Check the status of your job
