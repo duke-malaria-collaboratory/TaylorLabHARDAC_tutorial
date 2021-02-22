@@ -1,7 +1,7 @@
 # Install R libraries on HARDAC
 
 ### You'll likely need to install your own R packages on the cluster at some point
-	- To do so, follow these steps
+- To do so, follow these steps
 	
 ## Step 1:
 #### Create a directory for the packages in your /data/taylorlab/usr directory
