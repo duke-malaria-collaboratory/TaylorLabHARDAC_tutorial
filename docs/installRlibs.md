@@ -11,7 +11,7 @@
 #### If you need a specific version of R for the package(s) you'll use, search for the available versions by typing:
 	module spider R
 	
-	- Once you identify the version your package requires, replace the version above with the one you've found
+- Once you identify the version your package requires, replace the version above with the one you've found
 	
 ## Step 2:
 #### Set the path for the location from Step 1 of your R packages for "R_LIBS_USER" by typing:
