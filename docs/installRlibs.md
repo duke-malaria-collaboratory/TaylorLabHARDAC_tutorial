@@ -7,10 +7,9 @@
 #### Create a directory for the packages in your /data/taylorlab/usr directory
 	mkdir -p ${LAB_DIR}/${USER}/r_libs
 #### Load R module
-	module load R/R/3.5.3-gcb02 # Version 3.5 required for Bioconductor
+	module load R/3.5.3-gcb02 # Version 3.5 required for Bioconductor
 #### If you need a specific version of R for the package(s) you'll use, search for the available versions by typing:
-	module spider R
-	
+	module spider R	
 - Once you identify the version your package requires, replace the version above with the one you've found
 	
 ## Step 2:
