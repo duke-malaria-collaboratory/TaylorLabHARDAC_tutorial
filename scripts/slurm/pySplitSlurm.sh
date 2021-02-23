@@ -12,17 +12,14 @@
 
 module load python/3.7.4-gcb01
 module load cutadapt/2.3-gcb01 
-#module load java/1.7.0_60-fasrc01
-#module load jdk/9-gcb01
 
 echo "$SLURM_ARRAY_TASK_ID"
 pair1=$(ls /data/taylorlab/jws48/avatar/reads/1/*.fastq.gz |sort| sed -n ${SLURM_ARRAY_TASK_ID}p)
 pair2=$(ls /data/taylorlab/jws48/avatar/reads/2/*.fastq.gz |sort| sed -n ${SLURM_ARRAY_TASK_ID}p)
 
-refdir="/data/taylorlab/jws48/avatar/refs"
-out="/data/taylorlab/jws48/avatar/split"
+refdir="/data/taylorlab/${USER}/HARDAC_tutorial/data/refs"
+out="/data/taylorlab/${USER}/splitReadsResults"
 maxIndel=100
-minRatio=66
 
 .././splitSyncMultiRefArray.py -numTargets 5 \
 -refSeqs $refdir/pfcrt/pfcrt.fasta,$refdir/K13/K13.fasta,$refdir/pfmdr1/pfmdr1.fasta,$refdir/dhfr/dhfr.fasta,$refdir/dhps/dhps.fasta \
