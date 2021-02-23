@@ -12,7 +12,7 @@
 	pwd
 	
 ### Change into your home directory
-	cd
+	cd ~/
 		
 ### See what files and/or directories are around
 	ls
@@ -21,7 +21,7 @@
 	cd Documents
 	ls
 	
-### Move back into your home directory
+### Move back one directory level to your home directory
 	cd ..
 	
 ### Change into the Desktop directory and see what files are there
@@ -48,6 +48,10 @@
 
 ### In addition to a file's location, "mv" can also change a file name. Change the name of test.txt to newDoc.txt
 	mv test.txt newDoc.txt
+	echo "And you've uploaded this doc to HARDAC"\!"" >> newDoc.txt
 
-### Connecting to HARDAC
+## Connecting to HARDAC
+### Upload a file to HARDAC
+	scp newDoc.txt NetID@hardac-login.genome.duke.edu:/home/NetID
+
 - Connect to the cluster by typing 
