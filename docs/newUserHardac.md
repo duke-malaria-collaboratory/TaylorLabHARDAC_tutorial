@@ -41,13 +41,13 @@ Type the following:
     
     cd /data/taylorlab/
     
-    mkdir NetID
+    mkdir ${USER}
     
 This directory is where you direct all output on HARDAC. We have 1TB of storage space here.
 
 ### Change into your new directory
 Type the following:
 
-    cd NetID
+    cd ${USER}
     
 To run a test job, see the doc "jobSubmissiob.md"
