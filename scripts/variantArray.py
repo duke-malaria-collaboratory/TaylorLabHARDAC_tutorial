@@ -80,6 +80,7 @@ def align(refSeq, read1, read2, out):
 	os.system("rm {}/sam/{}.sam".format(out, sample))
 	os.system("samtools sort {}/bam/{}.bam -o {}/sort_bam/{}_sort.bam".format(out,sample,out,sample))
 	os.system("rm {}/bam/{}.bam".format(out, sample))
+	os.system("samtools index -b {}/sort_bam/{}_sort.bam".format(out,sample))
 
 	return(sample)
 
