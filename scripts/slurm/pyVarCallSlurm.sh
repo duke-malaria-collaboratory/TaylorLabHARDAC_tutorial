@@ -16,11 +16,11 @@ module load bwa/0.7.12-gcb01
 module load python/3.7.4-gcb01
 
 echo "$SLURM_ARRAY_TASK_ID"
-pair1=$(ls /data/taylorlab/ampliconVariants/reads/1/*.fastq.gz |sort| sed -n ${SLURM_ARRAY_TASK_ID}p)
-pair2=$(ls /data/taylorlab/ampliconVariants/reads/2/*.fastq.gz |sort| sed -n ${SLURM_ARRAY_TASK_ID}p)
+pair1=$(ls /data/taylorlab/${USER}/HARDAC_tutorial/data/reads/amplicon/1/*.fastq.gz |sort| sed -n ${SLURM_ARRAY_TASK_ID}p)
+pair2=$(ls /data/taylorlab/${USER}/HARDAC_tutorial/data/reads/amplicon/2/*.fastq.gz |sort| sed -n ${SLURM_ARRAY_TASK_ID}p)
 
-refdir="/data/taylorlab/ampliconVariants/refs"
-out="/data/taylorlab/ampliconVariants/BQ20_noIndels_allSitesPy"
+refdir="/data/taylorlab/${USER}/HARDAC_tutorial/data/refs"
+out="/data/taylorlab/${USER}/variantCallResults"
 bq=20
 
 mkdir -p $out
