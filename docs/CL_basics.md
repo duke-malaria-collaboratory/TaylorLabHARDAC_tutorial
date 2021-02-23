@@ -18,7 +18,7 @@
 	ls
 
 ### Download this document to your Desktop
-	wget https://github.com/jws48/TaylorLabHARDAC_tutorial/blob/main/docs/CL_basics.md
+	wget https://raw.githubusercontent.com/jws48/TaylorLabHARDAC_tutorial/main/docs/Test.txt
 
 ### Print document to your Terminal window
 	cat CL_basics.md
