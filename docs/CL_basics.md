@@ -18,13 +18,13 @@
 	ls
 
 ### Download this document to your Desktop
-	wget https://raw.githubusercontent.com/jws48/TaylorLabHARDAC_tutorial/main/docs/Test.txt
+	wget https://raw.githubusercontent.com/jws48/TaylorLabHARDAC_tutorial/main/docs/test.txt
 
 ### Print document to your Terminal window
-	cat CL_basics.md
+	cat test.txt
 	
 ### Try to autocomplete with tab:
-	cat CL_ *tab*
+	cat tes *tab*
 	
 - If you hit the tab key once you've started typing the name of a file, the rest of the name will automatically fill in
 - This will save you time and prevent typos, especially with long file names 
