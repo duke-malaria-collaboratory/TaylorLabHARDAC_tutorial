@@ -19,3 +19,8 @@ Type the following:
 	
 ### Install another package (e.g. Seaborn) into this environment while it's activated
 	
+	conda install seaborn
+	
+### Deactivate environment
+
+	source deactivate
