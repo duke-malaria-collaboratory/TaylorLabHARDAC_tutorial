@@ -14,4 +14,7 @@ Type the following:
 
 ### Create conda environment that has the pandas library installed
 	conda create -n main -c conda-forge pandas
-	conda activate /data/taylorlab/${USER}/conda/envs/main
+	source activate /data/taylorlab/${USER}/conda/envs/main
+	
+### Install another package (e.g. Seaborn) into this environment while it's activated
+	
