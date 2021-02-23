@@ -12,8 +12,9 @@ Type the following:
 ### Load the Anaconda module
 	module load Anaconda/4.3.0-fasrc01
 
-### Create conda environment that has the pandas library installed
-	conda create -n main -c conda-forge pandas
+### Create conda environment with Python version 3.6.1 that has the pandas \
+library installed
+	conda create -n new_env -c conda-forge python==3.6.1 pandas
 	source activate /data/taylorlab/${USER}/conda/envs/main
 	
 ### Install another package (e.g. Seaborn) into this environment while it's activated
