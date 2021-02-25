@@ -16,46 +16,22 @@ module load bwa/0.7.12-gcb01
 module load python/3.7.4-gcb01
 
 echo "$SLURM_ARRAY_TASK_ID"
-pair1=$(ls /data/taylorlab/${USER}/HARDAC_tutorial/data/reads/amplicon/1/*.fastq.gz |sort| sed -n ${SLURM_ARRAY_TASK_ID}p)
-pair2=$(ls /data/taylorlab/${USER}/HARDAC_tutorial/data/reads/amplicon/2/*.fastq.gz |sort| sed -n ${SLURM_ARRAY_TASK_ID}p)
 
-refdir="/data/taylorlab/${USER}/HARDAC_tutorial/data/refs"
-out="/data/taylorlab/${USER}/variantCallResults"
+out="/data/taylorlab/jws48/avatar/testLoop"
 bq=20
+refdir="/data/taylorlab/jws48/avatar/refs"
 
 mkdir -p $out
 
-.././variantArray.py \
--ref $refdir/pfcrt \
--p1 $pair1 \
--p2 $pair2 \
--bq $bq \
--o $out/pfcrt 
-
-.././variantArray.py \
--ref $refdir/dhps \
--p1 $pair1 \
--p2 $pair2 \
--bq $bq \
--o $out/dhps
-
-.././variantArray.py \
--ref $refdir/dhfr \
--p1 $pair1 \
--p2 $pair2 \
--bq $bq \
--o $out/dhfr
-
-.././variantArray.py \
--ref $refdir/K13 \
--p1 $pair1 \
--p2 $pair2 \
--bq $bq \
--o $out/K13
-
-.././variantArray.py \
--ref $refdir/pfmdr1 \
--p1 $pair1 \
--p2 $pair2 \
--bq $bq \
--o $out/pfmdr1
+for REF in pfcrt dhps dhfr pfmdr1 K13
+do
+	pair1=$(ls /data/taylorlab/${USER}/avatar/split/fastq/${REF}/1/*.fastq.gz |sort| sed -n ${SLURM_ARRAY_TASK_ID}p)
+	pair2=$(ls /data/taylorlab/${USER}/avatar/split/fastq/${REF}/2/*.fastq.gz |sort| sed -n ${SLURM_ARRAY_TASK_ID}p)
+	
+	.././variantArray.py \
+	-ref $refdir/$REF \
+	-p1 $pair1 \
+	-p2 $pair2 \
+	-bq $bq \
+	-o $out/$REF
+done
