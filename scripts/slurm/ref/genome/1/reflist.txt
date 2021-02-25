@@ -1,0 +1,5 @@
+/gpfs/fs1/data/taylorlab/jws48/TaylorLabHARDAC_tutorial/data/refs/pfcrt/pfcrt.fasta
+/gpfs/fs1/data/taylorlab/jws48/TaylorLabHARDAC_tutorial/data/refs/K13/K13.fasta
+/gpfs/fs1/data/taylorlab/jws48/TaylorLabHARDAC_tutorial/data/refs/pfmdr1/pfmdr1.fasta
+/gpfs/fs1/data/taylorlab/jws48/TaylorLabHARDAC_tutorial/data/refs/dhfr/dhfr.fasta
+/gpfs/fs1/data/taylorlab/jws48/TaylorLabHARDAC_tutorial/data/refs/dhps/dhps.fasta

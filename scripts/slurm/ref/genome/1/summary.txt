@@ -1,0 +1,14 @@
+#Summary
+#Generated on	Thu Feb 25 11:09:36 EST 2021
+#Version	5
+chroms	1
+bases	23872
+defined	6672
+undefined	17200
+contigs	5
+scaffolds	5
+interpad	300
+source	/gpfs/fs1/data/taylorlab/jws48/TaylorLabHARDAC_tutorial/scripts/slurm/ref/genome/1/merged_ref_4382938931279198530.fa.gz
+bytes	2632
+last modified	1614269375000
+scafprefixes	true
