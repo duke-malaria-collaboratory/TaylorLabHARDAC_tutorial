@@ -17,9 +17,9 @@ module load python/3.7.4-gcb01
 
 echo "$SLURM_ARRAY_TASK_ID"
 
-out="/data/taylorlab/jws48/avatar/testLoop"
+out="/data/taylorlab/${USER}/variantCall"
 bq=20
-refdir="/data/taylorlab/jws48/avatar/refs"
+refdir="/data/taylorlab/${USER}/HARDAC_tutorial/data/refs"
 
 mkdir -p $out
 
