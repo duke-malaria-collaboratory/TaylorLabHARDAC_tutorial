@@ -25,8 +25,8 @@ mkdir -p $out
 
 for REF in pfcrt dhps dhfr pfmdr1 K13
 do
-	pair1=$(ls /data/taylorlab/${USER}/avatar/split/fastq/${REF}/1/*.fastq.gz |sort| sed -n ${SLURM_ARRAY_TASK_ID}p)
-	pair2=$(ls /data/taylorlab/${USER}/avatar/split/fastq/${REF}/2/*.fastq.gz |sort| sed -n ${SLURM_ARRAY_TASK_ID}p)
+	pair1=$(ls /data/taylorlab/${USER}/splitReadsResults/fastq/${REF}/1/*.fastq.gz |sort| sed -n ${SLURM_ARRAY_TASK_ID}p)
+	pair2=$(ls /data/taylorlab/${USER}/splitReadsResults/fastq/${REF}/2/*.fastq.gz |sort| sed -n ${SLURM_ARRAY_TASK_ID}p)
 	
 	.././variantArray.py \
 	-ref $refdir/$REF \
