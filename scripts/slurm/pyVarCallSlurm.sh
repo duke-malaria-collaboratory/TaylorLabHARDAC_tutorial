@@ -19,7 +19,7 @@ echo "$SLURM_ARRAY_TASK_ID"
 
 out="/data/taylorlab/${USER}/variantCall"
 bq=20
-refdir="/data/taylorlab/${USER}/HARDAC_tutorial/data/refs"
+refdir="/data/taylorlab/${USER}/TaylorLabHARDAC_tutorial/data/refs"
 
 mkdir -p $out
 
