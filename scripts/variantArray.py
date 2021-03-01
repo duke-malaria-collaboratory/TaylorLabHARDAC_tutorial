@@ -32,8 +32,6 @@ def makeOutDirs(topOut):
 	bam = os.path.join(topOut, "bam")
 	sortBam = os.path.join(topOut, "sort_bam")
 	vcf = os.path.join(topOut, "vcf")
-	vcf_unfilt = os.path.join(topOut, vcf, "unfiltered")
-	vcf_filt = os.path.join(topOut, vcf, "filtered")
 	if not os.path.exists(sam):
         	os.makedirs(sam)
 	if not os.path.exists(bam):
@@ -42,11 +40,6 @@ def makeOutDirs(topOut):
 		os.makedirs(sortBam)
 	if not os.path.exists(vcf):
 		os.makedirs(vcf)
-	if not os.path.exists(vcf_unfilt):
-		os.makedirs(vcf_unfilt)
-	if not os.path.exists(vcf_filt):
-		os.makedirs(vcf_filt)
-		
 
 def getRef(refDir):
 	i = 0
@@ -65,9 +58,7 @@ def getRef(refDir):
 		print("\n***Reference sequence already indexed***\n")
 	return(fasta)
 
-
 def align(refSeq, read1, read2, out):
-
 	filename = os.path.basename(read1)
 	sample = filename.split('_')[0]
 	filename2 = os.path.basename(read2)
@@ -90,7 +81,7 @@ def varCall(refSeq, sample, bq, out):
 	print("\nCalling variants\n")
 	os.system("bcftools mpileup -Ou --annotate {} -Q {} -d 300000 -f {} {}/sort_bam/{}_sort.bam \
 		| bcftools call -Ov -m --skip-variants indels > \
-		{}/vcf/unfiltered/{}.vcf".format(anno, bq, refSeq, out, sample, out, sample))
+		{}/vcf/{}.vcf".format(anno, bq, refSeq, out, sample, out, sample))
 
 
 #Main-------------------------------------------------------------------------------
