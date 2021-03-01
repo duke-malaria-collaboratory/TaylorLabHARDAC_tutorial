@@ -39,9 +39,9 @@
 
 ### Check the status of your job
 	squeue -u ${USER}
-	- There will likely only be the interactive session displayed, since this practice job we submitted should be complete before you have time to type this out
+- There will likely only be the interactive session displayed, since this practice job we submitted should be complete before you have time to type this out
 
 ### Using the reads we've just split into their respective targets, call variants for each sample
 	sbatch pyVarCallSlurm.sh
-	- Note: This job must be called *after* the pySplitSlurm.sh script, since this one uses the splitReadsResults fastq files as input, which won't exist until that script is run
+- Note: This job must be called *after* the pySplitSlurm.sh script, since this one uses the splitReadsResults fastq files as input, which won't exist until that script is run
 
