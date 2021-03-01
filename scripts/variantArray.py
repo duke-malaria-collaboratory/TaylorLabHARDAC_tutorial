@@ -18,7 +18,7 @@ Sorted BAM and VCF files are output into the specified directory.
 Forward and reverse reads must be stored in separate directories.
 *************************************************************************************
 
-command: python variantArray.py
+command: python variantArray.py -ref <ref_dir> -p1 <pair1> -p2 <pair2> -bq <baseQual> -o <out_dir>
 """
 
 #Functions--------------------------------------------------------------------------
