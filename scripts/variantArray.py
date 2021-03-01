@@ -88,11 +88,10 @@ def varCall(refSeq, sample, bq, out):
 	anno = "FORMAT/AD,FORMAT/ADF,FORMAT/ADR,FORMAT/DP,FORMAT/SP,INFO/AD,INFO/ADF,INFO/ADR"
 
 	print("\nCalling variants\n")
-	os.system("bcftools mpileup --annotate {} -Q {} -d 300000 -f {} {}/sort_bam/{}_sort.bam \
-		| bcftools call -m --ploidy 1 --skip-variants indels > \
+	os.system("bcftools mpileup -Ou --annotate {} -Q {} -d 300000 -f {} {}/sort_bam/{}_sort.bam \
+		| bcftools call -Ov -m --skip-variants indels > \
 		{}/vcf/unfiltered/{}.vcf".format(anno, bq, refSeq, out, sample, out, sample))
-	os.system("bcftools filter -g 1 {}/vcf/unfiltered/{}.vcf > {}/vcf/filtered/{}.vcf".format(out, sample, out, sample))
-	print("Filtered VCF file in {}/vcf/filtered".format(out))
+
 
 #Main-------------------------------------------------------------------------------
 if __name__ == "__main__":
