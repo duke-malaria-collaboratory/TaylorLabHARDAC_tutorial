@@ -19,10 +19,11 @@
 ## Step 3:
 #### Start an R session:
 	R
-#### Install a package (e.g. Biobase) from Bioconductor
+#### Install and load a package (e.g. Biobase) from Bioconductor
 	if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
 	BiocManager::install("Biobase")
+	load("Biobase")
 
 ## Step 4:
 #### Check that the package has been installed:
