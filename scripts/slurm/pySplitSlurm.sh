@@ -5,7 +5,7 @@
 #SBATCH -n 1					# Number of cores
 #SBATCH -N 1					# Ensure that all cores are on one machine
 #SBATCH -t 24-00:00				# Runtime in D-HH:MM (or use minutes)
-#SBATCH --mem 1000				# Memory in MB
+#SBATCH --mem 10000				# Memory in MB
 #SBATCH -o log/pySplit_%A_%a.out 		# File for STDOUT (with jobid = %j) 
 #SBATCH -e errorLog/pySplit_%A_%a.err		# File for STDERR (with jobid = %j)   
 #SBATCH --array=1-18%6				# Array tasks
