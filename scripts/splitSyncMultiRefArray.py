@@ -92,7 +92,7 @@ def splitReads(refs, refIDs, trim1, trim2, maxIndel, out):
 	refList = refs
 	print(refList)
 	
-	os.system("bbsplit.sh -Xmx8000m in={} in2={} ref={} ".format(trim1, trim2, refList) + \
+	os.system("/data/taylorlab/software/bbmap/bbsplit.sh -Xmx8000m in={} in2={} ref={} ".format(trim1, trim2, refList) + \
 			"maxindel={} basename={}_%_#.fastq ".format(maxIndel,  sample) + \
 			">& {}/Results/{}.txt".format(out, sample))
 	for i in range(len(refIDs)):
